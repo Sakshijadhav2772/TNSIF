@@ -1,0 +1,90 @@
+
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+body {
+  
+  background: linear-gradient(135deg, #0a0f28, #000000);
+  color: #e5e7eb;
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+  font-size: 7rem;
+  color: #f4d06f; 
+}
+
+p {
+  font-size: 2rem;
+  color: #b1e3e7; 
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 70%;
+  transition: transform 0.3s;
+  box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.5); 
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.roll-button {
+  padding: 15px 30px;
+  font-size: 2rem;
+  color: #0a0f28; 
+  background-color: #f4a261; 
+  border: none;
+  border-radius: 8px;
+  font-family: 'Indie Flower', cursive;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.roll-button:hover {
+  background-color: #e76f51; 
+  transform: scale(1.05); 
+}
+
+.winner-dice {
+  animation: bounce 0.5s ease infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
